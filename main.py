@@ -11,7 +11,7 @@ app = FastAPI()
 class User(BaseModel):
     username: str
     school: str
-    grade: int
+    grade: str
     birthdate: str
     password: str
 
@@ -24,7 +24,7 @@ class LoginSchema(BaseModel):
 class DisplayUser(BaseModel):
     username: str
     school: str
-    grade: int
+    grade: str
     birthdate: str
 
 
