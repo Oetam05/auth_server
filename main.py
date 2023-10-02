@@ -60,7 +60,7 @@ async def register(data: User):
 async def list_users() -> List[DisplayUser]:
     return [
         DisplayUser(
-            username=user.username, school=user.school, grade=user.grade
+            username=user.username, school=user.school, grade=user.grade, birthdate=user.birthdate
         )
         for user in users_db
     ]
